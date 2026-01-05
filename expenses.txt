@@ -1,0 +1,5 @@
+2000.0,shopping
+400.0,grocery
+200.0,food
+10000.0,shopping
+60000.0,travel

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox alignment="CENTER" spacing="18"
+      prefWidth="380"
+      style="-fx-padding: 25;"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.expensemanager.HelloController">
+
+    <!-- TITLE -->
+    <Label text="Expense Manager"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <Button fx:id="themeButton"
+            text="🌙 Dark Mode"
+            onAction="#toggleDarkMode"
+            prefWidth="260" />
+
+
+    <!-- INPUTS -->
+    <TextField fx:id="amountField"
+               promptText="Amount"
+               prefWidth="260" />
+
+    <TextField fx:id="categoryField"
+               promptText="Category"
+               prefWidth="260" />
+
+    <!-- ADD BUTTON -->
+    <Button text="Add Expense"
+            prefWidth="260"
+            onAction="#handleAddExpense" />
+
+    <!-- SEARCH -->
+    <TextField fx:id="searchField"
+               promptText="Search by category"
+               prefWidth="260" />
+
+    <!-- TABLE -->
+    <TableView fx:id="expenseTable"
+               prefWidth="320"
+               prefHeight="180"
+               onMouseClicked="#handleSelectExpense">
+
+        <columns>
+            <TableColumn fx:id="amountColumn"
+                         text="Amount"
+                         prefWidth="160" />
+            <TableColumn fx:id="categoryColumn"
+                         text="Category"
+                         prefWidth="160" />
+        </columns>
+    </TableView>
+
+    <!-- TOTAL -->
+    <Label fx:id="totalLabel"
+           text="Total Expense: ₹0"
+           style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <!-- ACTION BUTTONS -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Delete"
+                prefWidth="120"
+                onAction="#handleDeleteExpense"
+                style="-fx-background-color: #ff6b6b; -fx-text-fill: white;" />
+
+        <Button text="Update"
+                prefWidth="120"
+                onAction="#handleUpdateExpense"
+                style="-fx-background-color: #4caf50; -fx-text-fill: white;" />
+    </HBox>
+
+</VBox>

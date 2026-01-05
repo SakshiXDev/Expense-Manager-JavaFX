@@ -1,0 +1,70 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #1e1e1e;
+}
+
+/* ===== LABEL ===== */
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+/* ===== TEXT FIELD ===== */
+.text-field {
+    -fx-background-color: #2b2b2b;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-border-color: #444444;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+/* ===== BUTTON ===== */
+.button {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+/* ===== TABLE VIEW ===== */
+.table-view {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #444444;
+}
+
+/* Table header */
+.table-view .column-header-background {
+    -fx-background-color: #1e1e1e;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #333333;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+/* Rows */
+.table-row-cell {
+    -fx-background-color: #1e1e1e;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #252525;
+}
+
+/* Cell text */
+.table-cell {
+    -fx-text-fill: #ffffff;
+}
+
+/* Selected row */
+.table-row-cell:selected {
+    -fx-background-color: #3d3d3d;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: #ffffff;
+}
